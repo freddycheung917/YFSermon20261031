@@ -440,3 +440,12 @@ body.micro:not(.flow) .slide.idle .pill{animation:m-line 6s ease-in-out infinite
 .flow .t-grid4 .g4c{padding:calc(var(--u) * 34) calc(var(--u) * 40) calc(var(--u) * 34) calc(var(--u) * 56)}
 .flow .t-grid4 .g4tag{display:block;font-size:calc(var(--u) * 32);font-weight:700;color:var(--tone);margin-bottom:calc(var(--u) * 10)}
 .flow .t-grid4 .g4t{font-size:calc(var(--u) * 52)}
+
+/* scene slides: full-bleed illustration, caption band at the bottom */
+.slide.scene .bgimg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(9,16,28,.94) 0%,rgba(9,16,28,.82) 26%,rgba(9,16,28,.25) 48%,rgba(9,16,28,0) 62%),
+  linear-gradient(to bottom,rgba(9,16,28,.55) 0%,rgba(9,16,28,0) 14%)}
+.t-statement.scene .stext{left:calc(var(--u) * 120);top:calc(var(--u) * 650);width:calc(var(--u) * 1680);height:calc(var(--u) * 250);justify-content:flex-start;text-align:left;
+  text-shadow:0 calc(var(--u) * 2) calc(var(--u) * 18) rgba(0,0,0,.6)}
+.t-statement.scene .ssub{left:calc(var(--u) * 120);top:calc(var(--u) * 915);width:calc(var(--u) * 1680);text-align:left;font-size:calc(var(--u) * 40);text-shadow:0 calc(var(--u) * 2) calc(var(--u) * 12) rgba(0,0,0,.6)}
+.flow .t-statement.scene .stext,.flow .t-statement.scene .ssub{text-align:left}
