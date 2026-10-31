@@ -449,3 +449,26 @@ body.micro:not(.flow) .slide.idle .pill{animation:m-line 6s ease-in-out infinite
   text-shadow:0 calc(var(--u) * 2) calc(var(--u) * 18) rgba(0,0,0,.6)}
 .t-statement.scene .ssub{left:calc(var(--u) * 120);top:calc(var(--u) * 915);width:calc(var(--u) * 1680);text-align:left;font-size:calc(var(--u) * 40);text-shadow:0 calc(var(--u) * 2) calc(var(--u) * 12) rgba(0,0,0,.6)}
 .flow .t-statement.scene .stext,.flow .t-statement.scene .ssub{text-align:left}
+
+/* cue-card slides (keys) */
+.t-keys .krows{position:absolute;left:calc(var(--u) * 86);top:calc(var(--u) * 300);width:calc(var(--u) * 1748);height:calc(var(--u) * 650);display:flex;flex-direction:column;justify-content:center;gap:calc(var(--u) * 30)}
+.t-keys .khook{display:flex;align-items:center;gap:calc(var(--u) * 30);font-size:calc(var(--u) * 54);font-weight:700;line-height:1.25;color:var(--text)}
+.t-keys .kbar{flex:0 0 calc(var(--u) * 12);align-self:stretch;min-height:calc(var(--u) * 64);border-radius:calc(var(--u) * 6);background:var(--gold)}
+.t-keys .kverse{padding:calc(var(--u) * 26) calc(var(--u) * 40) calc(var(--u) * 30);border-left:calc(var(--u) * 10) solid var(--gold);border-radius:calc(var(--u) * 20)}
+.t-keys .kvref{font-size:calc(var(--u) * 32);font-weight:700;color:var(--gold);margin-bottom:calc(var(--u) * 10)}
+.t-keys .kvref span{font-weight:400;font-size:calc(var(--u) * 24);color:var(--grey);margin-left:calc(var(--u) * 20)}
+.t-keys .kvt{line-height:1.45;color:var(--text)}
+.t-keys .kfoot{position:absolute;left:calc(var(--u) * 86);top:calc(var(--u) * 900);width:calc(var(--u) * 1748);font-size:calc(var(--u) * 36);color:var(--gold)}
+.t-keys.kbigmode .krows{gap:calc(var(--u) * 46)}
+.t-keys .kbig{display:grid;grid-template-columns:calc(var(--u) * 120) minmax(calc(var(--u) * 360),auto) 1fr;align-items:center;gap:calc(var(--u) * 30)}
+.t-keys .kbi{width:calc(var(--u) * 110);height:calc(var(--u) * 110)}
+.t-keys .kbi svg{width:100%;height:100%}
+.t-keys .kbw{font-size:calc(var(--u) * 84);font-weight:700;color:var(--text)}
+.t-keys .kbn{font-size:calc(var(--u) * 52);color:var(--gold)}
+.slide.kscene .bgimg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to right,rgba(9,16,28,.92) 0%,rgba(9,16,28,.8) 55%,rgba(9,16,28,.45) 100%)}
+.t-keys.kscene .khook{text-shadow:0 calc(var(--u) * 2) calc(var(--u) * 14) rgba(0,0,0,.7)}
+.t-image .fullimg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.nextcue{position:absolute;right:calc(var(--u) * 87);top:calc(var(--u) * 962);height:calc(var(--u) * 36);line-height:calc(var(--u) * 36);font-size:calc(var(--u) * 24);color:var(--gold);opacity:.4;white-space:nowrap;pointer-events:none}
+.flow .nextcue{display:none}
+.t-keys:not(.kbigmode) .kbig{grid-template-columns:calc(var(--u) * 90) auto;gap:calc(var(--u) * 24)}.t-keys:not(.kbigmode) .kbi{width:calc(var(--u) * 84);height:calc(var(--u) * 84)}.t-keys:not(.kbigmode) .kbw{font-size:calc(var(--u) * 56);color:var(--gold)}
